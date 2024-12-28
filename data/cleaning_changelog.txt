@@ -1,0 +1,62 @@
+Entries for certain games were broken on import due to the title of the games having a semicolon (;) in the title of the games, which was parsed as a separator. These rows were corrected and the titles were fixed.
+
+Updated all release dates and publishers with publicly available information on Google, relying primarily on GameFAQs, Wikipedia, and Steam.
+
+Renamed the “rank” column as “id” since the rank seems to be arbitrary, and thus using “rank” as a column descriptor is inaccurate.
+
+Merged anomalous entries for games that had multiple listings. Some games were listed multiple times with sales data for only certain regions.
+E.g. “Luminous Arc 2 (JP_sales)” was a unique row, but the data was merged with the “Luminous Arc 2” sales data.
+Deleted IDs:
+#2224
+#4147
+#5304
+#6274
+#7955
+#10760
+#12519
+#14089
+#15002
+#16130
+#16201
+#16232
+
+Deleted the entry for “Housekeeping” which was ID# 14089. Had .04m JP exclusive sales. Could not find any info on this game, and there were hints that this was actually a game called “Ganbaru Watashi no Kakei Diary”, which is already in the dataset. Additionally the game was classified as an Action game under the genre column, which doesn’t make sense for a game with a title like “Housekeeping”
+
+Steal Princess for the Nintendo DS had different release dates in Japan versus overseas, however I decided to use the initial release date of the Japanese version of the game, as that is technically the actual release date.
+
+WarioWare: Twisted! for the GBA was originally released in Japan in 2004, and internationally in 2005. Just like Steal Princess, I’ve decided to use the actual initial release date.
+
+Entry 6274 was for The Legend of Zelda: The Minish Cap (weekly JP sales), with a JP_sales entry of .27, and an other_sales of .1, but Global_sales of .27. I’ve added this info to the primary Minish Cap entry, but increased global_sales by .28. This resulted in bringing the entry”s global sales to 1.7, up from 1.42, which is much closer to the sales data I found while researching.
+
+Drill Dozer for the GBA was originally released in Japan in 2005, and internationally in 2006. As before, I’ve decided to use the original Japanese release date.
+
+Sword of the Samurai for the PS2 was originally released in Japan in 2002, and internationally in 2003. Original Japanese release date used.
+
+Demon Chaos for the PS2 was originally released by Genki in 2005, however it was released in 2007 by Konami. As the dataset specifies the publisher, which in this case is Konami, I’ve decided to use the Konami release date of 2007.
+
+Virtua Quest for the PS2 was originally released in Japan in 2004 and internationally in 2005. Original Japanese release date used.
+
+Changed “Agarest Senki: Re-appearance” to “Record of Agarest War: Re-appearance”
+
+“Half-Minute Hero 2” is technically called “Yuusha 30 Second” and was a JP exclusive on PSP, however was localized and released on PC via Steam in 2014 under the title “Half-Minute Hero: The Second Coming”. I have opted to leave the sequel game has “Half-Minute Hero 2” for parity, as this dataset works exclusively with the PSP version of the game, and doesn’t have the Steam version.
+
+Dragon Ball Z: Budokai Tenkaichi 2 for the Nintendo Wii was split into two records, with one showing JP sales, whereas the other doesn’t have JP sales whatsoever. Due to some research indicating there were roughly 2 million copies sold between PS2 and Wii, it’s hard to say definitively, however as the dataset provides .79 million copies sold for the PS2 version, I think it would be prudent to assume the remaining 1.2 million copies were Wii copies if the ~2 million copies sold number is accurate.
+
+Deleted a duplicate entry for Wii de Asobu: Metroid Prime; ID 15002 was deleted, as ID 15000 already existed.
+
+Yu-Gi-Oh! 5D’s Wheelie Breakers had a separate entry for JP sales, which has been combined with the other entry for Yu-Gi-Oh! 5D’s Wheelie Breakers. The separate row for JP sales has been deleted. Rank 15479 has been deleted.
+
+ID 16201 for AKB1/48: Idol to Guam de Koishitara… was deleted as it lists the platform as Xbox 360, which according to my research, never existed. It was only released for the PSP as far as I can tell.
+
+ID 16232 was for Brothers in Arms: Furious 4 was deleted, as the game never released.
+
+Imagine: Makeup Artist had an incorrect release date of 2020, which has been corrected to 2009.
+
+Deleted the entry for ID #7955, Thomas the Tank Engine & Friends, 2004, GBA, as there are no games that I can find that match the criteria provided.
+
+Zoo (Games) is now known as indiePub; not reflected in dataset
+
+ID # 2224, Bentley’s Hackpack was listed as being on the GBA. This is incorrect as it was released on the Playstation Vita and Playstation 3, but never the GBA. Due to this lack of accuracy and not having reliable data that can be verified for the sales numbers, the row has been deleted.
+
+Removed data from extremely niche systems with 25 or fewer games; they have been relegated to a separate sheet in the Calc file.
+
