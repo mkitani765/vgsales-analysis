@@ -8,3 +8,6 @@ vgsales.ods is the file I cleaned and enriched. While it isn't perfect, the chan
 
 ## vgsales_cleaned.csv
 This is basically the same as vgsales.ods but in a .csv format for easy importing into a database.
+
+## cleaning_changelog.txt
+Any modifications or changes from the original .csv to my cleaned .csv and the .ods file are listed in this document.
